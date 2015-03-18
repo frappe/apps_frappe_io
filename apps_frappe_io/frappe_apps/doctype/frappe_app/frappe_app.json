@@ -181,6 +181,13 @@
    "reqd": 0, 
    "search_index": 0, 
    "set_only_once": 0
+  }, 
+  {
+   "fieldname": "priority", 
+   "fieldtype": "Int", 
+   "label": "Priority", 
+   "permlevel": 0, 
+   "precision": ""
   }
  ], 
  "hide_heading": 0, 
@@ -190,7 +197,7 @@
  "is_submittable": 0, 
  "issingle": 0, 
  "istable": 0, 
- "modified": "2015-03-18 17:12:40.505867", 
+ "modified": "2015-03-18 19:07:50.692696", 
  "modified_by": "Administrator", 
  "module": "Frappe Apps", 
  "name": "Frappe App", 
@@ -225,7 +232,7 @@
  "read_only": 0, 
  "read_only_onload": 0, 
  "search_fields": "app_name, introduction, description", 
- "sort_field": "modified", 
+ "sort_field": "priority", 
  "sort_order": "DESC", 
  "title_field": "app_name"
 }

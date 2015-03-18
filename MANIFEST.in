@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include apps_frappe_io *.css
+recursive-include apps_frappe_io *.csv
+recursive-include apps_frappe_io *.html
+recursive-include apps_frappe_io *.ico
+recursive-include apps_frappe_io *.js
+recursive-include apps_frappe_io *.json
+recursive-include apps_frappe_io *.md
+recursive-include apps_frappe_io *.png
+recursive-include apps_frappe_io *.py
+recursive-include apps_frappe_io *.svg
+recursive-include apps_frappe_io *.txt
+recursive-exclude apps_frappe_io *.pyc

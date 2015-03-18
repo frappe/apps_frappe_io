@@ -1,0 +1,16 @@
+{% block title %} Frappé Apps {% endblock %}
+{% block content %}
+<!-- no-header -->
+{% if frappe.local.form_dict.txt %}
+	<div class="list-hero">
+		<h1>
+			{{ _('Filtered by "{0}"').format(frappe.local.form_dict.txt) }}
+		</h1>
+	</div>
+{% endif %}
+<div class="website-list app-list">
+	{% include "templates/includes/list/list.html" %}
+</div>
+{% endblock %}
+
+{% block script %}{% include "templates/includes/list/list.js" %}{% endblock %}

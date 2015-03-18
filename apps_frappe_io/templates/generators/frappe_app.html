@@ -1,0 +1,50 @@
+{% block content %}
+<!-- no-header -->
+<div class="text-center">
+	<h1>{{ doc.app_name }}</h1>
+	<p class="lead app-introduction">{{ doc.introduction }}</p>
+</div>
+<div class="frappe-app-page">
+	{% if doc.screenshot %}
+	<img src="{{ doc.screenshot }}" class="img-responsive" style="margin: auto">
+	{% endif %}
+	<article class="frappe-app-content">
+		<div class="longform" itemprop="articleBody">
+		{{ doc.description or "" }}
+		</div>
+	</article>
+	<div class="longform">
+		{% if doc.app_website -%}
+		<p>
+			<strong>Website</strong><br>
+			<a href="{{ doc.app_website }}" target="_blank">{{ doc.app_website }}</a>
+		</p>
+		{% endif %}
+		{% if doc.demo_link -%}
+		<p>
+			<strong>Demo</strong><br>
+			<a href="{{ doc.demo_link }}" target="_blank">{{ doc.demo_link }}</a>
+		</p>
+		{% endif %}
+		{% if doc.source_code -%}
+		<p>
+			<strong>Source</strong><br>
+			<a href="{{ doc.source_code }}" target="_blank">{{ doc.source_code }}</a>
+		</p>
+		{% endif %}
+		<p>
+			<strong>Publisher</strong><br>
+			{% if doc.publisher_website -%}
+				<a href="{{ doc.publisher_website }}" target="_blank">{{ doc.publisher }}</a>
+			{%- else -%}
+				{{ doc.publisher }}
+			{%- endif %}
+		</p>
+	</div>
+</div>
+
+<script>
+	frappe.set_search_path("/");
+</script>
+{% endblock %}
+

@@ -1,9 +1,3 @@
-.container,
-.navbar {
-	max-width: 800px;
-	margin: auto;
-}
-
 .hero-and-content .container {
 	max-width: 660px;
 	margin: auto;

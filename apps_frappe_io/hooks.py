@@ -37,9 +37,9 @@ home_page = "/"
 
 website_context = {
 	"brand_html": "Frappé Apps",
-	"top_bar_items": [
-		{"label": "About", "url":"https://frappe.io", "right":1}
-	],
+	# "top_bar_items": [
+	# 	{"label": "About", "url":"https://frappe.io", "right":1}
+	# ],
 	"hide_login": 1,
 	"include_search": 1,
 	"hero": {

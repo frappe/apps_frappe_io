@@ -1,18 +1,7 @@
-.hero-and-content .container {
-	max-width: 660px;
-	margin: auto;
-}
-
-.navbar {
-	border-left: none;
-	border-right: none;
-}
-
-.page-content-wrapper {
+.page-content {
 	padding: 0px;
-	padding-bottom: 60px;
 }
 
-.page-container[data-doctype="Frappe App"] .page-content-wrapper {
-	padding: 30px 0px;
+.web-list-item:last-child {
+	border-bottom: 1px solid #d1d8dd;
 }

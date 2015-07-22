@@ -36,7 +36,7 @@ home_page = "/"
 # ----------
 
 website_context = {
-	"brand_html": "Frappé Apps",
+	"brand_html": "<img class='navbar-icon' src='/assets/frappe_theme/img/frappe-icon.svg' />Frappé Apps",
 	# "top_bar_items": [
 	# 	{"label": "About", "url":"https://frappe.io", "right":1}
 	# ],
@@ -44,7 +44,9 @@ website_context = {
 	"include_search": 1,
 	"hero": {
 		"/": "templates/includes/hero.html"
-	}
+	},
+	"favicon": "/assets/frappe_theme/img/frappe-favicon.png",
+
 }
 
 website_route_rules = [
